@@ -1,0 +1,86 @@
+﻿<Window x:Name="Music_Metadata_Editor" x:Class="MediaEditor.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MediaEditor"
+        mc:Ignorable="d"
+        Title="Music Metadata Editor" Height="600.0" Width="660" Background="CadetBlue" WindowStyle="SingleBorderWindow"
+         ResizeMode="CanResize" WindowStartupLocation="CenterScreen" Drop="Window_Drop" AllowDrop="True">
+
+    <Grid>
+        <!--User Selected Media List and edit area-->
+        <ListView Margin="3,25,210,10" Name="FileList" ScrollViewer.VerticalScrollBarVisibility="Auto" FontSize="14" AllowDrop="True"
+                  ScrollViewer.HorizontalScrollBarVisibility="Auto" BorderBrush="Black" Foreground="Black" Background="#FFFFF0F0">
+            <ListView.ContextMenu >
+                <ContextMenu>
+                    <MenuItem Header="Copy" Name="copyContextMenu" Click="CopyContextMenu_Click"/>
+                    <MenuItem Header="Paste" Name="pasteContextMenu" Click="PasteContextMenu_Click"/>
+                    <MenuItem Header="Delete Permanently" Name="deletePermanently" Click="DeletePermanently_Click"/>
+                    <MenuItem Header="Open the file directory" Name="openContextMenu" Click="OpenContextMenu_Click"/>
+                </ContextMenu>
+            </ListView.ContextMenu>
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn Header="Title" Width="170" DisplayMemberBinding="{Binding Title}"  />
+                    <GridViewColumn Header="Artist" Width="120" DisplayMemberBinding="{Binding Artist}" />
+                    <GridViewColumn Header="Genre" Width="50" DisplayMemberBinding="{Binding Genre}" />
+                    <GridViewColumn Header="Album" Width="90" DisplayMemberBinding="{Binding Album}" />
+
+                </GridView>
+            </ListView.View>
+        </ListView>
+
+        <!--Header of the form-->
+        <TextBlock HorizontalAlignment="Left" Height="24" Margin="25,0,0,0" 
+                   TextWrapping="Wrap" Text="SELECTED MEDIA" Foreground="DarkOrange" 
+                   FontWeight="Bold" FontSize="18" VerticalAlignment="Top" Width="276"/>
+
+        <!--Select folder button-->
+        <Button Content="SELECT FOLDER" Name="selectFolderButton" FontWeight="Bold" 
+                HorizontalAlignment="Left" Margin="482,41,0,0" VerticalAlignment="Top" 
+                Width="106" Height="40" Click="selectFolderButton_Click"/>
+
+        <!--Updates the selected medias-->
+        <Button Content="Update" Name="updateButton" FontSize="16" HorizontalAlignment="Left" Margin="461,114,0,0" 
+                VerticalAlignment="Top" Width="75" Height="39" Click="updateButton_Click"/>
+
+        <!--The text box for editting the media title-->
+        <TextBox Name="titleTextBox" HorizontalAlignment="Left" Height="28" Margin="524,435,0,106" 
+                 TextWrapping="Wrap" FontSize="20" VerticalAlignment="Center" Width="125"/>
+
+        <!--The text box for editting the media artist-->
+        <TextBox Name="artistTextBox" HorizontalAlignment="Left" Height="29" Margin="524,367,0,173" 
+                 TextWrapping="Wrap" FontSize="20" VerticalAlignment="Center" Width="125" />
+
+        <!--The text box for editting the media genre-->
+        <TextBox Name="genreTextBox" HorizontalAlignment="Left" Height="28" Margin="524,502,0,39" 
+                 TextWrapping="Wrap" FontSize="20" VerticalAlignment="Center" Width="125"/>
+
+        <!--The text box for editting the media album-->
+        <TextBox x:Name="albumTextBox" HorizontalAlignment="Left" Height="29" Margin="524,318,0,222" 
+            TextWrapping="Wrap" FontSize="20" VerticalAlignment="Center" Width="125" />
+
+        <!--Clear the list content-->
+        <Button Content="Clear" Name="clearButton" HorizontalAlignment="Left" Margin="544,114,0,0" 
+                VerticalAlignment="Top" Width="61" Height="39" Click="clearTheList_Click"/>
+
+        <!--Create backup of the selected medias in the working directory-->
+        <Button Content="Create Backup" FontSize="18" Foreground="Firebrick" Name="makeBackUpButton" 
+                HorizontalAlignment="Left" Margin="461,176,0,0" 
+                VerticalAlignment="Top" Width="144" Height="35" Click="makeBackUp_Click"/>
+
+        <TextBlock HorizontalAlignment="Left" Margin="461,368,0,0" TextWrapping="Wrap" Text="Artist" VerticalAlignment="Top"
+                   FontSize="22" Foreground="DarkViolet"/>
+
+        <TextBlock HorizontalAlignment="Left" Margin="461,503,0,0" TextWrapping="Wrap" Text="Genre" VerticalAlignment="Top"
+            FontSize="22" Foreground="DarkViolet"/>
+
+        <TextBlock HorizontalAlignment="Left" Margin="461,434,0,0" TextWrapping="Wrap" Text="Title" VerticalAlignment="Top"
+            FontSize="22" Foreground="DarkViolet"/>
+
+        <TextBlock HorizontalAlignment="Left" Margin="461,323,0,0" TextWrapping="Wrap" Text="Album" VerticalAlignment="Top"
+            FontSize="22" Foreground="DarkViolet"/>
+
+    </Grid>
+</Window>

@@ -1,0 +1,16 @@
+C:\Users\Selectra\source\repos\MediaEditor\MediaEditor\bin\Release\MediaEditor.exe.config
+C:\Users\Selectra\source\repos\MediaEditor\MediaEditor\bin\Release\MediaEditor.exe
+C:\Users\Selectra\source\repos\MediaEditor\MediaEditor\bin\Release\MediaEditor.pdb
+C:\Users\Selectra\source\repos\MediaEditor\MediaEditor\obj\Release\MainWindow.g.cs
+C:\Users\Selectra\source\repos\MediaEditor\MediaEditor\obj\Release\App.g.cs
+C:\Users\Selectra\source\repos\MediaEditor\MediaEditor\obj\Release\MediaEditor_MarkupCompile.cache
+C:\Users\Selectra\source\repos\MediaEditor\MediaEditor\obj\Release\MediaEditor_MarkupCompile.lref
+C:\Users\Selectra\source\repos\MediaEditor\MediaEditor\obj\Release\MainWindow.baml
+C:\Users\Selectra\source\repos\MediaEditor\MediaEditor\obj\Release\MediaEditor.g.resources
+C:\Users\Selectra\source\repos\MediaEditor\MediaEditor\obj\Release\MediaEditor.Properties.Resources.resources
+C:\Users\Selectra\source\repos\MediaEditor\MediaEditor\obj\Release\MediaEditor.csproj.GenerateResource.cache
+C:\Users\Selectra\source\repos\MediaEditor\MediaEditor\obj\Release\MediaEditor.csproj.CopyComplete
+C:\Users\Selectra\source\repos\MediaEditor\MediaEditor\obj\Release\MediaEditor.exe
+C:\Users\Selectra\source\repos\MediaEditor\MediaEditor\obj\Release\MediaEditor.pdb
+C:\Users\Selectra\source\repos\MediaEditor\MediaEditor\bin\Release\MediaEditor.exe.CodeAnalysisLog.xml
+C:\Users\Selectra\source\repos\MediaEditor\MediaEditor\bin\Release\MediaEditor.exe.lastcodeanalysissucceeded
